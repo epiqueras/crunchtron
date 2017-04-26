@@ -1,0 +1,23 @@
+// Right sidebar resize
+#sidebar {
+  width: 290px !important;
+  overflow: scroll !important;
+  height: calc(100vh - 110px) !important;
+  margin: 20px 20px 20px 0 !important;
+}
+
+// Left section resize
+#main_content {
+  width: calc(100% - 325px) !important;
+}
+
+// Make left section full width on small windows
+@media (max-width: 930px) {
+  #sidebar {
+    display: none !important;
+  }
+
+  #main_content {
+    width: calc(100% - 20px) !important;
+  }
+}

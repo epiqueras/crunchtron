@@ -1,0 +1,12 @@
+// Themes
+@import "./themes/_themes.scss";
+@import "./themes/_themify.scss";
+
+// Base
+@import "./base/_reset.scss";
+@import "./base/_base.scss";
+
+// Pages
+@import "./pages/home.scss";
+@import "./pages/_sidebars.scss";
+@import "./pages/_shows.scss";

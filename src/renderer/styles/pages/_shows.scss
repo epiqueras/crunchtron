@@ -1,0 +1,22 @@
+// Flex shows portrait grid
+.portrait-grid {
+  display: flex !important;
+  flex-wrap: wrap !important;
+
+  li {
+    flex: 1 0 auto !important;
+
+    a {
+      width: calc(100% - 24px) !important;
+    }
+
+    img {
+      margin: auto;
+    }
+  }
+}
+
+// Make video player full width
+#showmedia_video_player {
+  width: 100% !important;
+}
