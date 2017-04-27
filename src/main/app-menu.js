@@ -1,4 +1,5 @@
-import { app, Menu, autoUpdater } from 'electron'
+import { app, Menu } from 'electron'
+import { autoUpdater } from 'electron-updater'
 
 import createWindow from './windows'
 import config from './config'
