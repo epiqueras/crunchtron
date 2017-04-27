@@ -73,6 +73,7 @@
     "appId": "crunchtron",
     "mac": {
       "category": "video"
-    }
+    },
+    "extraResources": "flash/"
   }
 }

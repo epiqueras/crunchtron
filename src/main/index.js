@@ -7,9 +7,12 @@ import createAppMenu from './app-menu'
 import initializeAutoUpdater from './auto-updater'
 import config from './config'
 
-if (process.env.NODE_ENV === 'development') require('electron-reload')(__dirname)
-
-flashLoader.addSource(join(__dirname, '../../flash/PepperFlashPlayer.plugin')).load() // Load flash
+if (process.env.NODE_ENV === 'development') {
+  require('electron-reload')(__dirname)
+  flashLoader.addSource(join(__dirname, '../../flash/PepperFlashPlayer.plugin')).load() // Load flash
+} else {
+  flashLoader.addSource(join(__dirname, '../../../flash/PepperFlashPlayer.plugin')).load() // Load flash
+}
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected
