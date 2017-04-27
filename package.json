@@ -20,14 +20,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/epiqueras/tweetron.git"
+    "url": "git+https://github.com/epiqueras/crunchtron.git"
   },
   "author": "epiqueras",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/epiqueras/tweetron/issues"
+    "url": "https://github.com/epiqueras/crunchtron/issues"
   },
-  "homepage": "https://github.com/epiqueras/tweetron#readme",
+  "homepage": "https://github.com/epiqueras/crunchtron#readme",
   "dependencies": {
     "electron-config": "^0.2.1",
     "electron-updater": "^1.14.2",
