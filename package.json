@@ -1,6 +1,6 @@
 {
   "name": "crunchtron",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "An unofficial crunchyroll desktop app.",
   "main": "built/main/index.js",
   "scripts": {
