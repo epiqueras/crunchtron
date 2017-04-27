@@ -1,0 +1,39 @@
+body {
+  @include themify {
+    &,
+    #template_container,
+    #template_body {
+      background: theme(body-background) !important;
+    }
+
+    p {
+      color: theme(paragraph-text) !important;
+    }
+
+    .message-container {
+      background: theme(message-container-background) !important;
+    }
+
+    .show-all-simulcasts-button {
+      background: theme(buttons-background) !important;
+    }
+
+    a {
+      color: theme(links-text) !important;
+
+      &:hover {
+        background: theme(links-hover-background) !important;
+      }
+    }
+
+    input,
+    textarea {
+      border-color: #333 !important;
+    }
+
+    #showmedia_free_trial_signup {
+      background: theme(free-trial-background) !important;
+      color: theme(free-trial-text) !important;
+    }
+  }
+}

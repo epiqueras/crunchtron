@@ -1,22 +1,24 @@
-// Flex shows portrait grid
-.portrait-grid {
-  display: flex !important;
-  flex-wrap: wrap !important;
-
-  li {
-    flex: 1 0 auto !important;
-
-    a {
-      width: calc(100% - 24px) !important;
-    }
-
-    img {
-      margin: auto;
-    }
-  }
-}
-
 // Make video player full width
 #showmedia_video_player {
   width: 100% !important;
+}
+
+textarea {
+  border-radius: 5px !important;
+}
+
+.comments-header.boxtitle {
+  margin-bottom: 20px;
+}
+
+.showmedia-submenu {
+  display: none;
+}
+
+.white-wrapper {
+  border-radius: 5px !important;
+}
+
+.collection-carousel-arrow {
+  opacity: 0.15;
 }

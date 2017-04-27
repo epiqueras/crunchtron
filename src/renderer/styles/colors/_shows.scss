@@ -1,0 +1,54 @@
+body {
+  @include themify {
+    .main-tabs {
+      a {
+        color: theme(seasons-tabs-text) !important;
+
+        &.selected {
+          color: theme(seasons-tabs-selected-text) !important;
+          background: theme(seasons-tabs-selected-background) !important;
+
+          &:hover {
+            color: black !important;
+          }
+        }
+
+        &:hover {
+          background: theme(seasons-tabs-hover-background) !important;
+        }
+      }
+    }
+
+    a.portrait-element,
+    .white-wrapper {
+      background: theme(portrait-background) !important;
+    }
+
+    a.season-dropdown {
+      background: theme(seasons-dropdown-background) !important;
+      border-color: theme(seasons-dropdown-border) !important;
+    }
+
+    #tabs {
+      background: theme(tabs-background) !important;
+    }
+
+    textarea {
+      background: theme(body-background) !important;
+      color: invert(theme(body-background)) !important;
+    }
+
+    .button.default-button {
+      background: theme(buttons-background) !important;
+      text-shadow: none;
+    }
+
+    .guestbook-sort-bar {
+      background: theme(comments-sort-bar-background) !important;
+    }
+
+    .guestbook-list {
+      border-color: #333;
+    }
+  }
+}

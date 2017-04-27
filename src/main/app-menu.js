@@ -1,6 +1,7 @@
 import { app, Menu, autoUpdater } from 'electron'
 
 import createWindow from './windows'
+import config from './config'
 
 export default function createAppMenu(windows) {
   const menuTemplate = [
@@ -14,7 +15,8 @@ export default function createAppMenu(windows) {
         },
       ],
     },
-    { label: 'Edit',
+    {
+      label: 'Edit',
       submenu: [
         { role: 'undo' },
         { role: 'redo' },
@@ -25,6 +27,13 @@ export default function createAppMenu(windows) {
         { role: 'pasteandmatchstyle' },
         { role: 'delete' },
         { role: 'selectall' },
+      ],
+    },
+    {
+      label: 'Theme',
+      submenu: [
+        { label: 'default', type: 'radio' },
+        { label: 'dark', type: 'radio' },
       ],
     },
     { role: 'window', submenu: [{ role: 'minimize' }, { role: 'close' }] },
@@ -81,5 +90,19 @@ export default function createAppMenu(windows) {
     })
   }
 
-  return Menu.buildFromTemplate(menuTemplate)
+  const currentTheme = config.get('crTheme')
+  const menu = Menu.buildFromTemplate(menuTemplate)
+  const themeSubmenuItems = menu.items.find(menuItem => menuItem.label === 'Theme').submenu.items
+  themeSubmenuItems.find(subMenuItem => subMenuItem.label === currentTheme).checked = true
+
+  // Add click events for theme submenu
+  themeSubmenuItems.forEach(subMenuItem => {
+    subMenuItem.click = () => {
+      windows.forEach(win => win.webContents.send('themeChanges', subMenuItem.label))
+      subMenuItem.checked = true
+      config.set('crTheme', subMenuItem.label)
+    }
+  })
+
+  return menu
 }

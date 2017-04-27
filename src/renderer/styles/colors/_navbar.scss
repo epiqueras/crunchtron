@@ -1,0 +1,29 @@
+body {
+  @include themify {
+    #header_beta {
+      background: theme(navbar-background) !important;
+
+      .header-icon {
+        color: theme(navbar-icon-text) !important;
+        fill: theme(navbar-icon-fill) !important;
+      }
+
+      .mini-menu-button {
+        fill: theme(hamburger-icon-fill) !important;
+      }
+
+      #header_search_form {
+        border-color: theme(search-border) !important;
+        background: theme(search-input-background) !important;
+
+        #header_search_input {
+          background: theme(search-input-background) !important;
+        }
+
+        svg {
+          fill: theme(search-icon-fill) !important;
+        }
+      }
+    }
+  }
+}

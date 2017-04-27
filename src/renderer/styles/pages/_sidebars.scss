@@ -21,3 +21,21 @@
     width: calc(100% - 20px) !important;
   }
 }
+
+.new_layout.new_layout_wide {
+  #sidebar {
+    display: none !important;
+  }
+
+  #main_content {
+    width: calc(100% - 20px) !important;
+  }
+
+  #showmedia_video {
+    padding-right: 20px !important;
+  }
+}
+
+#message_box {
+  padding-right: 20px !important;
+}

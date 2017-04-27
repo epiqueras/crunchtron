@@ -1,11 +1,13 @@
 /* global window, document */
+import { ipcRenderer } from 'electron'
+
+ipcRenderer.on('themeChanges', (e, theme) => {
+  document.documentElement.classList = theme
+})
 
 const $ = document.querySelector.bind(document)
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Set theme
-  document.documentElement.classList.toggle('default', true)
-
   // Fix scroll the right section
   document.addEventListener('scroll', () => {
     const body = $('body')

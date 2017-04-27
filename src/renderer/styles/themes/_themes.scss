@@ -7,9 +7,58 @@ $themes: (
     hamburger-icon-fill: rgba(160, 152, 149, 0.75),
     search-border: #cecaca,
     search-input-background: white,
-    search-icon-background: #fff,
     search-icon-fill: rgba(160, 152, 149, 0.75),
     // Main div
-    place: white,
+    body-background: #fff,
+    message-container-background: #e5f4fa,
+    buttons-background: #ececec,
+    paragraph-text: invert(white),
+    // Text
+    links-text: #333,
+    links-hover-background: #999,
+    // Seasons page
+    seasons-tabs-text: #fff,
+    seasons-tabs-selected-text: #3f3f3f,
+    seasons-tabs-selected-background: #fff,
+    seasons-tabs-hover-background: #333,
+    portrait-background: #fff,
+    seasons-dropdown-background: #e5e5e5,
+    seasons-dropdown-border: #e5e5e5,
+    tabs-background: #fff,
+    comments-sort-bar-background: #ebebeb,
+    // Misc
+    free-trial-background: #3f3f3f,
+    free-trial-text: #eee,
+  ),
+  dark: (
+    // Navbar
+    navbar-background: invert(#fff),
+    navbar-icon-text: invert(rgba(160, 152, 149, 0.75)),
+    navbar-icon-fill: invert(rgba(160, 152, 149, 0.75)),
+    hamburger-icon-fill: rgba(160, 152, 149, 0.75),
+    search-border: invert(#cecaca),
+    search-input-background: invert(white),
+    search-icon-fill: invert(rgba(160, 152, 149, 0.75)),
+    // Main div
+    body-background: #111,
+    message-container-background: invert(#e5f4fa),
+    buttons-background: invert(#ececec),
+    paragraph-text: invert(black),
+    // Text
+    links-text: invert(#333),
+    links-hover-background: invert(#999),
+    // Seasons page
+    seasons-tabs-text: invert(#fff),
+    seasons-tabs-selected-text: invert(#3f3f3f),
+    seasons-tabs-selected-background: invert(#fff),
+    seasons-tabs-hover-background: invert(#333),
+    portrait-background: invert(#fff),
+    seasons-dropdown-background: invert(#e5e5e5),
+    seasons-dropdown-border: invert(#e5e5e5),
+    tabs-background: invert(#fff),
+    comments-sort-bar-background: invert(#ebebeb),
+    // Misc
+    free-trial-background: invert(#3f3f3f),
+    free-trial-text: invert(#eee),
   ),
 );
