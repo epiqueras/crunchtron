@@ -1,5 +1,5 @@
-import { autoUpdater, Menu } from 'electron'
-import { version } from '../../package'
+import { Menu } from 'electron'
+import { autoUpdater } from 'electron-updater'
 
 let state = 'checking'
 
@@ -50,6 +50,5 @@ export default function initializeAutoUpdater() {
     updateMenu()
   })
 
-  autoUpdater.setFeedURL(`https://crunchtron-updater.herokuapp.com/update/${process.platform}/${version}`)
   autoUpdater.checkForUpdates()
 }

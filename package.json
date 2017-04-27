@@ -15,7 +15,7 @@
     "build:all": "babel ./src -d built && node-sass ./src/renderer/styles/index.scss -o ./built/renderer/styles/",
     "build": "yarn run clean && yarn lint && yarn run build:all",
     "pack": "yarn run build && build --dir",
-    "dist": "yarn run build && build -mw"
+    "dist": "yarn run build && build -mw -p onTagOrDraft"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
   "homepage": "https://github.com/epiqueras/tweetron#readme",
   "dependencies": {
     "electron-config": "^0.2.1",
+    "electron-updater": "^1.14.2",
     "flash-player-loader": "^1.2.0"
   },
   "devDependencies": {
