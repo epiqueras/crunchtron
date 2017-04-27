@@ -28,7 +28,8 @@
   },
   "homepage": "https://github.com/epiqueras/tweetron#readme",
   "dependencies": {
-    "electron-config": "^0.2.1"
+    "electron-config": "^0.2.1",
+    "flash-player-loader": "^1.2.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -37,7 +38,6 @@
     "electron": "^1.6.6",
     "electron-builder": "^17.1.1",
     "electron-reload": "^1.1.0",
-    "flash-player-loader": "^1.2.0",
     "husky": "^0.13.3",
     "node-sass": "^4.5.2",
     "rimraf": "^2.6.1",
