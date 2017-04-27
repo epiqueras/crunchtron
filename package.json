@@ -16,7 +16,7 @@
     "build": "yarn run clean && yarn lint && yarn run build:all",
     "pack": "yarn run build && build --dir",
     "dist": "yarn run build && build -mw",
-    "dist:release": "publish.sh"
+    "dist:release": "./publish.sh"
   },
   "repository": {
     "type": "git",
