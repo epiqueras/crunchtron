@@ -15,7 +15,8 @@
     "build:all": "babel ./src -d built && node-sass ./src/renderer/styles/index.scss -o ./built/renderer/styles/",
     "build": "yarn run clean && yarn lint && yarn run build:all",
     "pack": "yarn run build && build --dir",
-    "dist": "yarn run build && build -mw -p onTagOrDraft"
+    "dist": "yarn run build && build -mw",
+    "dist:release": "./publish.sh"
   },
   "repository": {
     "type": "git",
