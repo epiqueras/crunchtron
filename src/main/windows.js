@@ -34,9 +34,6 @@ export default function createWindow(windows, i, state = { width: 800, height: 6
     windows.splice(i, 1)
   })
 
-  // Windows[i].webContents.setUserAgent(userAgent)
-  windows[i].loadURL(url)
-
   windows[i].webContents.on('dom-ready', () => {
     windows[i].webContents.send('themeChanges', config.get('crTheme'))
     windows[i].webContents.insertCSS(readFileSync(join(__dirname, '../renderer/styles/index.css'), 'utf8'))
@@ -48,4 +45,7 @@ export default function createWindow(windows, i, state = { width: 800, height: 6
     e.preventDefault()
     shell.openExternal(url)
   })
+
+  // Windows[i].webContents.setUserAgent(userAgent)
+  windows[i].loadURL(url)
 }

@@ -17,6 +17,7 @@ const windows = []
 
 app.on('ready', () => {
   config.get('windowStates').forEach((state, index) => createWindow(windows, index, state))
+  if (windows.length === 0) createWindow(windows, 0)
   Menu.setApplicationMenu(createAppMenu(windows)) // Attach menu
   if (process.env.NODE_ENV !== 'development') initializeAutoUpdater()
 })
